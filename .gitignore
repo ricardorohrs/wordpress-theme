@@ -12,15 +12,15 @@
 # http://kernel.org/pub/software/scm/git/docs/gitignore.html
 
 # Ignore everything in the root except the "wp-content" directory.
-/*
 !.gitignore
-!wp-content/
+# !wp-content/
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
 # and "themes" directories.
-wp-content/*
-!wp-content/plugins/
-!wp-content/themes/
+ wp-content/*
+ !wp-content/plugins/
+ !wp-content/themes/follow55/
+ !wp-content/uploads/2024/
 
 # Ignore everything in the "plugins" directory, except the plugins you
 # specify (see the commented-out examples for hints on how to do this.)
@@ -30,4 +30,5 @@ wp-content/*
 # Ignore everything in the "themes" directory, except the themes you
 # specify (see the commented-out example for a hint on how to do this.)
 # wp-content/themes/*
-# !wp-content/themes/my-theme/
+
+/.idea/
