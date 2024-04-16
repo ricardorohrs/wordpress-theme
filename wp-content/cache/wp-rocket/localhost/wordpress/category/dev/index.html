@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.5.1",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),document.addEventListener("DOMContentLoaded",(()=>{this.p()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}k(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.M(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.O()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.O()}D(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}S(){return new Promise((t=>{this.T?this.O=t:t()}))}C(){this.T=!0}O(){this.T=!1}M(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}p(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&0!==i.indexOf("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.j(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.P(this),this.F(this),this.q(),this.A(),this.I(),await this.U(this.delayedScripts.normal),await this.U(this.delayedScripts.defer),await this.U(this.delayedScripts.async);try{await this.W(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.S().then((()=>{this.D()})),this.N()}A(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(function(){t.setAttribute("data-rocket-status","failed"),e()})),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed"),e()}}));t.setAttribute("data-rocket-status","skipped")}async U(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.U(t)):Promise.resolve()}I(){this.j([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}j(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o){const n=document.createElement("link");n.href=o,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),i.appendChild(n),this.trash.push(n)}})),document.head.appendChild(i)}P(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function n(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(n){t.everythingLoaded?o=n:e["rocket"+i]=o=n}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){if(o&&o.fn&&!t.allJQueries.includes(o)){o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])};const e=o.fn.on;o.fn.on=o.fn.init.prototype.on=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this},t.allJQueries.push(o)}e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async W(){this.domReadyFired=!0,await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}q(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),n=i.parentElement;let s=t.get(i);void 0===s&&(s=i.nextSibling,t.set(i,s));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),n.insertBefore(c,s)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.k(t)}}RocketLazyLoadScripts.run()})();</script>
+        <meta charset="">
+        <meta name="viewport" content="width=device-width">
+
+        <title>dev &#8211; WordPress &#8211; follow55</title>
+<meta name='robots' content='noindex, nofollow' />
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+
+<link rel="alternate" type="application/rss+xml" title="Feed de categoria para WordPress - follow55 &raquo; dev" href="http://localhost/wordpress/category/dev/feed/" />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='http://localhost/wordpress/wp-includes/css/dist/block-library/style.min.css?ver=6.5.2' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wpzoom-social-icons-block-style-css' href='http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/social-icons-widget-by-wpzoom/block/dist/style-wpzoom-social-icons.css?ver=1712843591' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='stylesheet' id='hamburger.css-css' href='http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-responsive-menu/assets/css/wpr-hamburger.css?ver=1712843591' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wprmenu.css-css' href='http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-responsive-menu/assets/css/wprmenu.css?ver=1712843591' type='text/css' media='all' />
+<style id='wprmenu.css-inline-css' type='text/css'>
+@media only screen and ( max-width: 767px ) {html body div.wprm-wrapper {overflow: scroll;}#wprmenu_bar {background-image: url();background-size: cover ;background-repeat: repeat;}#wprmenu_bar {background-color: #c92c2c;}html body div#mg-wprm-wrap .wpr_submit .icon.icon-search {color: #ffffff;}#wprmenu_bar .menu_title,#wprmenu_bar .wprmenu_icon_menu,#wprmenu_bar .menu_title a {color: #ffffff;}#wprmenu_bar .menu_title a {font-size: 20px;font-weight: normal;}#mg-wprm-wrap li.menu-item a {font-size: 15px;text-transform: uppercase;font-weight: normal;}#mg-wprm-wrap li.menu-item-has-children ul.sub-menu a {font-size: 15px;text-transform: uppercase;font-weight: normal;}#mg-wprm-wrap li.current-menu-item > a {background: #d53f3f;}#mg-wprm-wrap li.current-menu-item > a,#mg-wprm-wrap li.current-menu-item span.wprmenu_icon{color: #ffffff !important;}#mg-wprm-wrap {background-color: #c82d2d;}.cbp-spmenu-push-toright,.cbp-spmenu-push-toright .mm-slideout {left: 80% ;}.cbp-spmenu-push-toleft {left: -80% ;}#mg-wprm-wrap.cbp-spmenu-right,#mg-wprm-wrap.cbp-spmenu-left,#mg-wprm-wrap.cbp-spmenu-right.custom,#mg-wprm-wrap.cbp-spmenu-left.custom,.cbp-spmenu-vertical {width: 80%;max-width: 400px;}#mg-wprm-wrap ul#wprmenu_menu_ul li.menu-item a,div#mg-wprm-wrap ul li span.wprmenu_icon {color: #ffffff;}#mg-wprm-wrap ul#wprmenu_menu_ul li.menu-item:valid ~ a{color: #ffffff;}#mg-wprm-wrap ul#wprmenu_menu_ul li.menu-item a:hover {background: #d53f3f;color: #ffffff !important;}div#mg-wprm-wrap ul>li:hover>span.wprmenu_icon {color: #ffffff !important;}.wprmenu_bar .hamburger-inner,.wprmenu_bar .hamburger-inner::before,.wprmenu_bar .hamburger-inner::after {background: #ffffff;}.wprmenu_bar .hamburger:hover .hamburger-inner,.wprmenu_bar .hamburger:hover .hamburger-inner::before,.wprmenu_bar .hamburger:hover .hamburger-inner::after {background: #ffffff;}div.wprmenu_bar div.hamburger{padding-right: 6px !important;}#wprmenu_menu.left {width:80%;left: -80%;right: auto;}#wprmenu_menu.right {width:80%;right: -80%;left: auto;}html body div#wprmenu_bar {height : 40px;}#mg-wprm-wrap.cbp-spmenu-left,#mg-wprm-wrap.cbp-spmenu-right,#mg-widgetmenu-wrap.cbp-spmenu-widget-left,#mg-widgetmenu-wrap.cbp-spmenu-widget-right {top: 40px !important;}.wprmenu_bar .hamburger {float: left;}.wprmenu_bar #custom_menu_icon.hamburger {top: px;left: px;float: left !important;background-color: #cccccc;}.main-menu{ display: none !important; }.wpr_custom_menu #custom_menu_icon {display: block;}html { padding-top: 42px !important; }#wprmenu_bar,#mg-wprm-wrap { display: block; }div#wpadminbar { position: fixed; }}
+</style>
+<link data-minify="1" rel='stylesheet' id='wpr_icons-css' href='http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-responsive-menu/inc/assets/icons/wpr-icons.css?ver=1712843591' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wpos-slick-style-css' href='http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-responsive-recent-post-slider/assets/css/slick.css?ver=1712843591' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wppsac-public-style-css' href='http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-responsive-recent-post-slider/assets/css/recent-post-style.css?ver=1712843591' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='bootstrap-css-css' href='http://localhost/wordpress/wp-content/cache/min/1/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css?ver=1712843592' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='template-css' href='http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/themes/follow55/css/template.css?ver=1712843592' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wpzoom-social-icons-socicon-css' href='http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/wpzoom-socicon.css?ver=1712843592' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wpzoom-social-icons-genericons-css' href='http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/genericons.css?ver=1712843592' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wpzoom-social-icons-academicons-css' href='http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/academicons.min.css?ver=1712843592' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wpzoom-social-icons-font-awesome-3-css' href='http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/font-awesome-3.min.css?ver=1712843592' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='dashicons-css' href='http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-includes/css/dashicons.min.css?ver=1712843592' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wpzoom-social-icons-styles-css' href='http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/wpzoom-social-icons-styles.css?ver=1712843592' type='text/css' media='all' />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-academicons-woff2-css' href='http://localhost/wordpress/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/academicons.woff2?v=1.9.2'  type='font/woff2' crossorigin />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-fontawesome-3-woff2-css' href='http://localhost/wordpress/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/fontawesome-webfont.woff2?v=4.7.0'  type='font/woff2' crossorigin />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-genericons-woff-css' href='http://localhost/wordpress/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/Genericons.woff'  type='font/woff' crossorigin />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-socicon-woff2-css' href='http://localhost/wordpress/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/socicon.woff2?v=4.2.18'  type='font/woff2' crossorigin />
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(http://localhost/wordpress/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="http://localhost/wordpress/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="http://localhost/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-responsive-menu/assets/js/modernizr.custom.js?ver=1712843592" id="modernizr-js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-responsive-menu/assets/js/touchSwipe.js?ver=1712843592" id="touchSwipe-js" defer></script>
+<script type="text/javascript" id="wprmenu.js-js-extra">
+/* <![CDATA[ */
+var wprmenu = {"zooming":"","from_width":"767","push_width":"400","menu_width":"80","parent_click":"","swipe":"","enable_overlay":""};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/wp-responsive-menu/assets/js/wprmenu.js?ver=1712843592" id="wprmenu.js-js" defer></script>
+<link rel="https://api.w.org/" href="http://localhost/wordpress/wp-json/" /><link rel="alternate" type="application/json" href="http://localhost/wordpress/wp-json/wp/v2/categories/4" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost/wordpress/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.5.2" />
+<link rel="icon" href="http://localhost/wordpress/wp-content/uploads/2024/04/1631312070935.jpeg" sizes="32x32" />
+<link rel="icon" href="http://localhost/wordpress/wp-content/uploads/2024/04/1631312070935.jpeg" sizes="192x192" />
+<link rel="apple-touch-icon" href="http://localhost/wordpress/wp-content/uploads/2024/04/1631312070935.jpeg" />
+<meta name="msapplication-TileImage" content="http://localhost/wordpress/wp-content/uploads/2024/04/1631312070935.jpeg" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>    </head>
+
+    <body class="archive category category-dev category-4 wp-custom-logo">
+        <header>
+            <section class="top-bar">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="social-media-icons col-xl-9 col-sm-7 col-6">
+                            <div class="widget-wrapper">
+<div class="wp-block-wpzoom-blocks-social-icons is-style-with-canvas-rounded" style="--wpz-social-icons-block-item-font-size:18px;--wpz-social-icons-block-item-padding-horizontal:6px;--wpz-social-icons-block-item-padding-vertical:6px;--wpz-social-icons-block-item-margin-horizontal:5px;--wpz-social-icons-block-item-margin-vertical:5px;--wpz-social-icons-block-item-border-radius:5px;--wpz-social-icons-block-label-font-size:16px;--wpz-social-icons-block-label-color:#2e3131;--wpz-social-icons-block-label-color-hover:#2e3131;--wpz-social-icons-alignment:flex-start"><a href="https://www.facebook.com/wefollow55/?locale=pt_BR" class="social-icon-link" title="Facebook" style="--wpz-social-icons-block-item-color:#0866FF;--wpz-social-icons-block-item-color-hover:#0866FF"><span class="social-icon socicon socicon-facebook"></span></a><a href="https://www.instagram.com/follow55.com.br/" class="social-icon-link" title="Instagram" style="--wpz-social-icons-block-item-color:#d7445f;--wpz-social-icons-block-item-color-hover:#E4405F"><span class="social-icon socicon socicon-instagram"></span></a><a href="https://www.linkedin.com/company/follow55/" class="social-icon-link" title="Linkedin" style="--wpz-social-icons-block-item-color:#0077B5;--wpz-social-icons-block-item-color-hover:#0077B5"><span class="social-icon socicon socicon-linkedin"></span></a></div>
+</div>                        </div>
+                        <div class="search col-xl-3 col-sm-5 col-6 text-end"><form role="search" method="get" class="search-form" action="http://localhost/wordpress/">
+    <label>
+        <input type="search" class="search-field" placeholder="Pesquisar &hellip;" value="" name="s" />
+    </label>
+    <button type="submit" class="search-submit">
+        <span class="screen-reader-text">
+		    OK	    </span>
+    </button>
+</form>
+ </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-area">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <section class="logo col-md-2 col-12">
+                            <a href="http://localhost/wordpress/" class="custom-logo-link" rel="home"><img width="150" height="50" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%2050'%3E%3C/svg%3E" class="custom-logo" alt="WordPress &#8211; follow55" decoding="async" data-lazy-src="http://localhost/wordpress/wp-content/uploads/2024/04/logo.jpeg" /><noscript><img width="150" height="50" src="http://localhost/wordpress/wp-content/uploads/2024/04/logo.jpeg" class="custom-logo" alt="WordPress &#8211; follow55" decoding="async" /></noscript></a>                        </section>
+                        <nav class="main-menu col-md-10 text-end">
+                            <div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-28"><a href="http://localhost/wordpress/">Home</a></li>
+<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="http://localhost/wordpress/sobre/">Sobre</a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-29"><a href="http://localhost/wordpress/blog/">Blog</a></li>
+<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="http://localhost/wordpress/contato/">Contato</a></li>
+</ul></div>                        </nav>
+                    </div>
+                </div>
+            </section>
+        </header><div class="banner">
+    <img width="500" height="706" class="img-fluid" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20706'%3E%3C/svg%3E" data-lazy-src="http://localhost/wordpress/wp-content/uploads/2024/04/nicholas.992d35eb.png" /><noscript><img width="500" height="706" class="img-fluid" src="http://localhost/wordpress/wp-content/uploads/2024/04/nicholas.992d35eb.png" /></noscript>
+<b>Warning</b>:  Undefined property: stdClass::$wigth in <b>C:\xampp\htdocs\wordpress\wp-content\themes\follow55\archive.php</b> on line <b>3</b><br />
+" alt="">
+</div>
+<div class="content-area">
+    <main>
+
+        <section class="middle-area">
+            <div class="container">
+                <div class="row">
+
+                    <div class="archive col-md-8">
+
+                        <h1 class="archive-title">Categoria: <span>dev</span></h1>
+                                <article class="featured post-72 post type-post status-publish format-standard has-post-thumbnail hentry category-dev category-web tag-vue">
+    <h2><a href="http://localhost/wordpress/2024/04/10/desenvolvimento-com-vue-js-simplificando-a-criacao-de-aplicacoes-web-modernas/">Desenvolvimento com Vue.js: Simplificando a Criação de Aplicações Web Modernas</a></h2>
+    <img width="200" height="65" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%2065'%3E%3C/svg%3E" class="attachment-200x200 size-200x200 wp-post-image" alt="" decoding="async" data-lazy-src="http://localhost/wordpress/wp-content/uploads/2024/04/vue-js-methods-demistified@3x-8.png" /><noscript><img width="200" height="65" src="http://localhost/wordpress/wp-content/uploads/2024/04/vue-js-methods-demistified@3x-8.png" class="attachment-200x200 size-200x200 wp-post-image" alt="" decoding="async" /></noscript>    <div class="meta-info">
+        <p>Publicado em 10 de abril de 2024 por <a href="http://localhost/wordpress/author/admin/" title="Posts de admin" rel="author">admin</a> </p>
+        <p>Categorias: <a href="http://localhost/wordpress/category/dev/" rel="category tag">dev</a>, <a href="http://localhost/wordpress/category/web/" rel="category tag">web</a></p>
+        <p>Tags: <a href="http://localhost/wordpress/tag/vue/" rel="tag">vue</a></p>
+    </div>
+    
+<p>Vue.js tem se estabelecido como uma das principais escolhas para o desenvolvimento de aplicações web modernas, e com razão. Sua simplicidade e flexibilidade tornaram-no uma ferramenta essencial para desenvolvedores em todo o mundo. Neste artigo, exploraremos o que torna Vue.js tão especial e como ele pode simplificar o processo de desenvolvimento de aplicações web.</p>
+
+
+
+<p><strong>Por que Vue.js?</strong></p>
+
+
+
+<p>Uma das principais razões pelas quais os desenvolvedores optam pelo Vue.js é sua facilidade de uso. Com uma curva de aprendizado suave, Vue.js permite que até mesmo iniciantes criem aplicações web complexas com facilidade. Sua sintaxe intuitiva e documentação abrangente tornam a construção de interfaces de usuário dinâmicas uma tarefa simples e direta.</p>
+
+
+
+<p>Além disso, Vue.js adota uma abordagem centrada em componentes para o desenvolvimento de interfaces de usuário. Isso significa que você pode dividir sua aplicação em componentes reutilizáveis, o que não só facilita a manutenção do código, mas também acelera o processo de desenvolvimento.</p>
+
+
+
+<p><strong>Principais recursos do Vue.js</strong></p>
+
+
+
+<ul>
+<li><strong>Reatividade</strong>: Vue.js utiliza um sistema de reatividade que automaticamente atualiza a interface do usuário sempre que os dados subjacentes são alterados. Isso elimina a necessidade de manipular manualmente as atualizações de DOM, resultando em um código mais limpo e eficiente.</li>
+
+
+
+<li><strong>Directivas</strong>: Vue.js oferece uma variedade de diretivas incorporadas que simplificam a manipulação do DOM. Por exemplo, a diretiva <code>v-if</code> permite controlar a renderização condicional de elementos, enquanto a diretiva <code>v-for</code> facilita a iteração sobre listas de dados.</li>
+
+
+
+<li><strong>Vue CLI</strong>: O Vue CLI (Command Line Interface) fornece uma maneira fácil de iniciar novos projetos Vue.js, bem como adicionar recursos adicionais, como roteamento e gerenciamento de estado, com apenas alguns comandos.</li>
+
+
+
+<li><strong>Vue Router e Vuex</strong>: Para aplicações mais complexas, o Vue.js oferece o Vue Router para gerenciamento de rotas e Vuex para gerenciamento de estado. Ambos os pacotes são oficialmente mantidos pela equipe do Vue.js e integrados perfeitamente com o ecossistema Vue.</li>
+</ul>
+
+
+
+<p><strong>Conclusão</strong></p>
+
+
+
+<p>Vue.js continua a ganhar popularidade entre os desenvolvedores devido à sua simplicidade, flexibilidade e poder. Se você está procurando uma maneira eficiente de construir aplicações web modernas, Vue.js é uma escolha excelente. Com uma curva de aprendizado suave e uma ampla gama de recursos, Vue.js capacita os desenvolvedores a criar experiências de usuário dinâmicas e envolventes de forma rápida e eficiente. Experimente Vue.js em seu próximo projeto e descubra por que tantos desenvolvedores estão optando por esta poderosa estrutura de front-end.</p>
+</article>
+                            
+                                <article class="featured post-35 post type-post status-publish format-standard has-post-thumbnail hentry category-dev category-web tag-app tag-mobile">
+    <h2><a href="http://localhost/wordpress/2024/04/09/teste-2/">Desenvolvimento de Aplicativos Mobile: Transformando Ideias em Realidade Digital</a></h2>
+    <img width="200" height="133" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20133'%3E%3C/svg%3E" class="attachment-200x200 size-200x200 wp-post-image" alt="" decoding="async" data-lazy-src="http://localhost/wordpress/wp-content/uploads/2024/04/Imagem-tipos-de-sites-3-min-1024x683-1.png" /><noscript><img width="200" height="133" src="http://localhost/wordpress/wp-content/uploads/2024/04/Imagem-tipos-de-sites-3-min-1024x683-1.png" class="attachment-200x200 size-200x200 wp-post-image" alt="" decoding="async" /></noscript>    <div class="meta-info">
+        <p>Publicado em 9 de abril de 2024 por <a href="http://localhost/wordpress/author/admin/" title="Posts de admin" rel="author">admin</a> </p>
+        <p>Categorias: <a href="http://localhost/wordpress/category/dev/" rel="category tag">dev</a>, <a href="http://localhost/wordpress/category/web/" rel="category tag">web</a></p>
+        <p>Tags: <a href="http://localhost/wordpress/tag/app/" rel="tag">app</a>, <a href="http://localhost/wordpress/tag/mobile/" rel="tag">mobile</a></p>
+    </div>
+    
+<p>Os aplicativos móveis tornaram-se a espinha dorsal da nossa vida digital. Desde simplificar tarefas cotidianas até fornecer entretenimento sem fim, eles se tornaram uma parte essencial de nossas vidas. Por trás de cada aplicativo inovador que você baixa na sua loja de aplicativos favorita, há uma equipe de desenvolvedores trabalhando arduamente para transformar ideias em realidade digital.</p>
+
+
+
+<h3 class="wp-block-heading">O Mundo Mobile em Constante Evolução</h3>
+
+
+
+<p>Com a rápida evolução da tecnologia móvel, desenvolver aplicativos que atendam às crescentes expectativas dos usuários tornou-se um desafio empolgante. Hoje em dia, os aplicativos não são apenas ferramentas; eles são experiências. Os usuários esperam aplicativos que sejam intuitivos, rápidos, seguros e visualmente atraentes.</p>
+
+
+
+<h3 class="wp-block-heading">O Processo Criativo por Trás dos Aplicativos</h3>
+
+
+
+<p>O desenvolvimento de aplicativos móveis envolve uma série de etapas, começando com a concepção da ideia e terminando com o lançamento do produto final. Aqui está um breve resumo do processo:</p>
+
+
+
+<ol>
+<li><strong>Ideação e Pesquisa</strong>: Tudo começa com uma ideia. Os desenvolvedores realizam pesquisas de mercado e análises de concorrência para entender as necessidades dos usuários e identificar oportunidades.</li>
+
+
+
+<li><strong>Design de Interface do Usuário (UI) e Experiência do Usuário (UX)</strong>: A interface do usuário e a experiência do usuário desempenham um papel crucial no sucesso de um aplicativo. Os designers criam wireframes e protótipos para visualizar como o aplicativo irá funcionar e como os usuários interagirão com ele.</li>
+
+
+
+<li><strong>Desenvolvimento</strong>: Aqui é onde a mágica acontece. Os desenvolvedores utilizam linguagens de programação como Swift (para iOS) e Kotlin (para Android) para transformar o design em código. Eles trabalham em estreita colaboração com os designers para garantir que o produto final corresponda às expectativas.</li>
+
+
+
+<li><strong>Testes e Feedback</strong>: Antes do lançamento, o aplicativo passa por extensivos testes para identificar e corrigir quaisquer problemas ou bugs. O feedback dos usuários é essencial nesta fase para garantir que o aplicativo atenda às suas expectativas.</li>
+
+
+
+<li><strong>Lançamento e Atualizações</strong>: Após passar pelos testes e receber a aprovação final, o aplicativo é lançado na loja de aplicativos. No entanto, o desenvolvimento não termina aqui. Os desenvolvedores continuam aprimorando o aplicativo com base no feedback dos usuários e nas tendências do mercado.</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading">Desafios e Oportunidades</h3>
+
+
+
+<p>Embora o desenvolvimento de aplicativos móveis ofereça inúmeras oportunidades, também apresenta desafios únicos. A fragmentação do mercado, a competição acirrada e as constantes mudanças nas tecnologias são apenas alguns dos obstáculos que os desenvolvedores enfrentam.</p>
+
+
+
+<p>No entanto, com os avanços na tecnologia, como inteligência artificial, realidade aumentada e Internet das Coisas (IoT), o potencial para inovação no desenvolvimento de aplicativos móveis é ilimitado. À medida que continuamos a avançar para um mundo cada vez mais conectado, o papel dos aplicativos móveis na nossa vida diária só tende a crescer.</p>
+
+
+
+<h3 class="wp-block-heading">Conclusão</h3>
+
+
+
+<p>O desenvolvimento de aplicativos móveis é uma jornada emocionante que combina criatividade, tecnologia e inovação. Por trás de cada aplicativo de sucesso, há uma equipe dedicada de desenvolvedores trabalhando incansavelmente para proporcionar experiências digitais incríveis aos usuários. À medida que a demanda por aplicativos móveis continua a crescer, o futuro do desenvolvimento móvel parece promissor e cheio de possibilidades. Então, da próxima vez que você baixar um aplicativo que melhore a sua vida de alguma forma, lembre-se do trabalho árduo e da paixão que foram necessários para torná-lo uma realidade.</p>
+</article>
+                            
+                            <div class="row">
+                                <div class="pages text-left col-6">
+                                                                    </div>
+                                <div class="pages text-right col-6">
+                                    <a href="http://localhost/wordpress/category/dev/page/2/" >Mais antigos >></a>                                </div>
+                            </div>
+
+                                            </div>
+
+                        <aside class="sidebar col-md-4 h-100">
+        <div class="widget-wrapper"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Arquivos</h2><ul class="wp-block-archives-list wp-block-archives">	<li><a href='http://localhost/wordpress/2024/04/'>abril 2024</a></li>
+</ul></div></div></div><div class="widget-wrapper"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Categorias</h2><ul class="wp-block-categories-list wp-block-categories">	<li class="cat-item cat-item-3"><a href="http://localhost/wordpress/category/design/">design</a>
+</li>
+	<li class="cat-item cat-item-4 current-cat"><a aria-current="page" href="http://localhost/wordpress/category/dev/">dev</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://localhost/wordpress/category/midias/">mídias</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://localhost/wordpress/category/sem-categoria/">Sem categoria</a>
+</li>
+	<li class="cat-item cat-item-2"><a href="http://localhost/wordpress/category/web/">web</a>
+</li>
+</ul></div></div></div>    </aside>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="copyright col-sm-7 col-3">
+                        <span style="font-size: 14px"></span>
+                        <span>- </span>
+                    </div>
+                    <nav class="footer-menu col-sm-5 col-9 text-right has-text-align-right">
+                        <div class="menu-menu-footer-container"><ul id="menu-menu-footer" class="menu"><li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-47"><a href="http://localhost/wordpress/">Home</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="http://localhost/wordpress/sobre/">Sobre</a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-48"><a href="http://localhost/wordpress/blog/">Blog</a></li>
+<li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="http://localhost/wordpress/contato/">Contato</a></li>
+</ul></div>                    </nav>
+                </div>
+            </div>
+        </footer>
+        
+			<div class="wprm-wrapper">
+        
+        <!-- Overlay Starts here -->
+			         <!-- Overlay Ends here -->
+			
+			         <div id="wprmenu_bar" class="wprmenu_bar bodyslide left">
+  <div class="hamburger hamburger--slider">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </div>
+  <div class="menu_title">
+      <a href="http://localhost/wordpress">
+      MENU    </a>
+      </div>
+</div>			 
+			<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left default " id="mg-wprm-wrap">
+				
+				
+				<ul id="wprmenu_menu_ul">
+  
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-28"><a href="http://localhost/wordpress/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="http://localhost/wordpress/sobre/">Sobre</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-29"><a href="http://localhost/wordpress/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="http://localhost/wordpress/contato/">Contato</a></li>
+
+     
+</ul>
+				
+				</div>
+			</div>
+			<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/wordpress(\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$))|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"http:\/\/localhost\/wordpress","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="http://localhost/wordpress/wp-content/cache/min/1/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js?ver=1712843592" id="bootstrap-js-js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="http://localhost/wordpress/wp-content/cache/min/1/wordpress/wp-content/plugins/social-icons-widget-by-wpzoom/assets/js/social-icons-widget-frontend.js?ver=1712843592" id="zoom-social-icons-widget-frontend-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="http://localhost/wordpress/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>    </body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1713225269 -->
