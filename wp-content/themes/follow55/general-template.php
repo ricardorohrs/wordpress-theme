@@ -8,7 +8,9 @@
 
 
 <?php get_header(); ?>
-<img class="img-fluid" src="<?php header_image();?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->wigth ?>" alt="">
+<div class="banner">
+    <img class="img-fluid" src="<?php header_image();?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width ?>" alt="">
+</div>
 <div class="content-area">
     <main>
         <section class="middle-area">
@@ -25,8 +27,6 @@
                                 <?php the_content(); ?>
                             </article>
 
-                        <p>modelo template</p>
-
                         <?php
                             endwhile;
                         else:
@@ -34,9 +34,7 @@
 
                         <p>Sem postagens</p>
 
-                    <?php
-                    endif;
-                    ?>
+                    <?php endif; ?>
                 </div>
             </div>
         </section>
